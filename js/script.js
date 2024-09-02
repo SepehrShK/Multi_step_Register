@@ -21,23 +21,32 @@ button1.addEventListener('click', function (e) {
 })
 
 button2.addEventListener('click', function (e) {
-    topics.style.display = 'none';
-    summary_text.style.display = 'block';
 
-    form2.style.display = 'none';
-    summary.style.display = 'block';
-
-    e.preventDefault();
-})
-
-function validateCheckboxes() {
     const checkboxes = document.querySelectorAll('input[name="topic"]');
     const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
     
     if (!isChecked) {
         alert('Please select at least one option.');
-        return false
+        e.preventDefault();
+    } else {
+        topics.style.display = 'none';
+        summary_text.style.display = 'block';
+
+        form2.style.display = 'none';
+        summary.style.display = 'block';
+
+        e.preventDefault();
     }
-    return true;
-}
+})
+
+// function validateCheckboxes() {
+//     const checkboxes = document.querySelectorAll('input[name="topic"]');
+//     const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+    
+//     if (!isChecked) {
+//         alert('Please select at least one option.');
+//         return false
+//     }
+//     return true;
+// }
 
