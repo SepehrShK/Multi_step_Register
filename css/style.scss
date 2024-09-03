@@ -1,14 +1,23 @@
+@mixin stepStyle{
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+
 h2{
     margin: 0;
 }
 body{
     margin: 0;
+    background-color:#121826;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
     .main {
-        background-color:#121826;
-        height: 100vh;
-        width: 100vw;
         display: grid;
         place-items: center;
+        row-gap: 20px;
         .main_box{
             background-color: #212936;
             width: 500px;
@@ -101,6 +110,27 @@ body{
                 }
             }
             
+        }
+        .step{
+            width: 80px;
+            height: 12px;
+            display: flex;
+            justify-content: space-between;
+            .step1{
+                @include stepStyle();
+                background-color: #652CD1;
+                box-shadow: 0 0 0 5px #845EEE33;
+
+            }
+            .step2{
+                @include stepStyle();
+                background-color: #394150;
+            }
+            .step3{
+                @include stepStyle();
+                background-color: #394150;
+            }
+
         }
     }
 }

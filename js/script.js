@@ -9,6 +9,10 @@ const summary = document.querySelector('.summary');
 const button1 = document.querySelector('.button1');
 const button2 = document.querySelector('.button2');
 
+const box_shadow1 = document.querySelector('.step1')
+const box_shadow2 = document.querySelector('.step2')
+const box_shadow3 = document.querySelector('.step3')
+
 
 button1.addEventListener('click', function (e) {
     register_text.style.display = 'none';
@@ -16,6 +20,10 @@ button1.addEventListener('click', function (e) {
 
     form.style.display = 'none';
     form2.style.display = 'block';
+
+    box_shadow1.style.boxShadow = 'none';
+    box_shadow2.style.backgroundColor = '#652CD1';
+    box_shadow2.style.boxShadow = '0 0 0 5px #845EEE33';
 
     e.preventDefault();
 })
@@ -35,18 +43,10 @@ button2.addEventListener('click', function (e) {
         form2.style.display = 'none';
         summary.style.display = 'block';
 
+        box_shadow2.style.boxShadow = 'none';
+        box_shadow3.style.backgroundColor = '#652CD1';
+        box_shadow3.style.boxShadow = '0 0 0 5px #845EEE33';
+
         e.preventDefault();
     }
 })
-
-// function validateCheckboxes() {
-//     const checkboxes = document.querySelectorAll('input[name="topic"]');
-//     const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
-    
-//     if (!isChecked) {
-//         alert('Please select at least one option.');
-//         return false
-//     }
-//     return true;
-// }
-
