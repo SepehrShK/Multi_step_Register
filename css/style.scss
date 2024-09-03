@@ -19,29 +19,30 @@ body{
         place-items: center;
         row-gap: 20px;
         .main_box{
+            position: relative;
             background-color: #212936;
             width: 500px;
-            height: 350px;
+            height: 340px;
             border: 1px solid #4D5562;
             border-radius: 18px;
             color: #A1A1A9;
             padding: 50px;
             .top{
                 color: #E5E7EB;
-                margin-bottom: 50px;
+                margin-bottom: 40px;
                 .topics{
                     display: none;
                 }
                 .summary_text{
                     display: none;
+                    
                 }
             }
             .bottom{
-                .form{
-                    // display: none;
+                .form1{
                     label{
                         display: block;
-                        margin: 25px 0 7px 0;
+                        margin: 30px 0 7px 0;
                     }
                     input{
                         display: block;
@@ -53,16 +54,20 @@ body{
                         border-radius: 12px;
                         padding: 0 10px;
                     }
-                    .button1{
-                        width: 150px;
-                        border: none;
-                        border-radius: 22.5px;
-                        background-color: #652CD1;
-                        color: #E5E7EB;
-                        margin: 40px auto;
-                        &:hover{
-                            background-color: #845EEE;
-                            cursor: pointer;
+                    .form1_button{
+                        text-align: center;
+                        .button1{
+                            width: 150px;
+                            height: 45px;
+                            border: none;
+                            border-radius: 22.5px;
+                            background-color: #652CD1;
+                            color: #E5E7EB;
+                            margin: 50px auto;
+                            &:hover{
+                                background-color: #845EEE;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -98,7 +103,7 @@ body{
                         border-radius: 22.5px;
                         background-color: #652CD1;
                         color: #E5E7EB;
-                        margin: 23px auto;
+                        margin: 24px auto;
                         &:hover{
                             background-color: #845EEE;
                             cursor: pointer;
@@ -107,6 +112,50 @@ body{
                 }
                 .summary{
                     display: none;
+                    .summary_text{
+                        .info_summary{
+                            p{
+                                font-size: 19px;
+                                margin: 10px auto;
+                                .name_text{
+                                    color: #E5E7EB;
+                                }
+                                .email_text{
+                                    color: #E5E7EB;
+                                }
+                            }
+                        }
+                        .topic_summary{
+                            margin: 25px auto;
+                            p{
+                                font-size: 19px;
+                                margin: 10px auto;
+                                .topic_text{
+                                    color: #E5E7EB;
+                                }
+                            }
+                        }
+                    }
+                    .summary_button{
+                        text-align: center;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        .button3{
+                            width: 150px;
+                            height: 45px;
+                            border: none;
+                            border-radius: 22.5px;
+                            background-color: #652CD1;
+                            color: #E5E7EB;
+                            margin-bottom: 50px;
+                            &:hover{
+                                background-color: #845EEE;
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
             }
             

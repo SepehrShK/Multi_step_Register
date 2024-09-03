@@ -16,32 +16,41 @@
                 <h2 class="summary_text">Summary</h2>
             </div>
             <div class="bottom">
-                <form class="form">
+                <form class="form1">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="enter your name">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="example@gmail.com">
-                <input class="button1" type="submit" value="Continue">
+                <div class="form1_button">
+                    <button class="button1" type="button">Continue</button>
+                </div>
                 </form>
                 <form class="form2" id="myForm">
-                    <input type="checkbox" name="topic" id="option1" value="option1">
+                    <input type="checkbox" name="topic" id="option1" value="Software Development">
                     <label for="option1">Software Development</label>
 
-                    <input type="checkbox" name="topic" id="option2" value="option2">
+                    <input type="checkbox" name="topic" id="option2" value="User Experience">
                     <label for="option2">User Experience</label>
 
-                    <input type="checkbox" name="topic" id="option3" value="option3">
+                    <input type="checkbox" name="topic" id="option3" value="Graphic Design">
                     <label for="option3">Graphic Design</label>
-                    <input class="button2" type="submit" value="Continue">
+                    <button class="button2" type="button">Continue</button>
                 </form>
                 <div class="summary">
-                    <div class="name_summary">
-                        <p>Name:</p>
-                        <p>Email:</p>
+                    <div class="summary_text">
+                        <div class="info_summary">
+                            <p>Name: <span class="name_text"></span></p>
+                            <p>Email: <span class="email_text"></span></p>
+                        </div>
+                        <div class="topic_summary">
+                            <p>Topics:</p>
+                            <p><span class="topic_text"></span></p>
+                            <p><span class="topic_text"></span></p>
+                            <p><span class="topic_text"></span></p>
+                        </div>
                     </div>
-                    <div class="topic_summary">
-                        <p>Topics:</p>
-                        <p></p>
+                    <div class="summary_button">
+                        <button class="button3" type="button">Confirm</button>
                     </div>
                 </div>
             </div> 
