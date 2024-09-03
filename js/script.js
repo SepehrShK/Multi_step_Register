@@ -8,6 +8,7 @@ const summary = document.querySelector('.summary');
 
 const button1 = document.querySelector('.button1');
 const button2 = document.querySelector('.button2');
+const button3 = document.querySelector('.button3');
 
 const box_shadow1 = document.querySelector('.step1')
 const box_shadow2 = document.querySelector('.step2')
@@ -18,8 +19,13 @@ button1.addEventListener('click', function (e) {
     const name = document.querySelectorAll('.form1 input')[0];
     const email = document.querySelectorAll('.form1 input')[1];
 
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
     if (!name.value.trim() || !email.value.trim()) {
         alert('Please fill in both your name and email.');
+        e.preventDefault();
+    } else if (!emailPattern.test(email.value.trim())) {
+        alert('Please enter a valid email address.');
         e.preventDefault();
     } else {
         const putName = document.querySelector(' .name_text')
@@ -78,4 +84,8 @@ button2.addEventListener('click', function (e) {
 
         e.preventDefault();
     }
+})
+
+button3.addEventListener('click', function (e) {
+    alert('Success');
 })
