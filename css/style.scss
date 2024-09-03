@@ -4,6 +4,7 @@
     border-radius: 6px;
 }
 
+
 h2{
     margin: 0;
 }
@@ -181,5 +182,11 @@ body{
             }
 
         }
+    }
+}
+
+@media (max-width: 510) {
+    .main_box{
+        width: 350px;
     }
 }
