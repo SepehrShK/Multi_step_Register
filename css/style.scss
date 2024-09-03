@@ -47,7 +47,7 @@ body{
                     }
                     input{
                         display: block;
-                        width: 475px;
+                        width: 476px;
                         height: 45px;
                         color: #A1A1A9;
                         background-color: #212936;
@@ -184,9 +184,36 @@ body{
         }
     }
 }
+@media (max-width: 610px) {
+    body{
+        .main{
+            .main_box{
+                width: 310px;
+                .bottom{
+                    .form1{
+                        input{
+                            width: 286px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-@media (max-width: 510) {
-    .main_box{
-        width: 350px;
+@media (max-width: 420px) {
+    body{
+        .main{
+            .main_box{
+                width: 250px;
+                .bottom{
+                    .form1{
+                        input{
+                            width: 226px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
